@@ -6,7 +6,7 @@ Get-ChildItem | Where-Object { $_.Name -match $regexp } | ForEach {
   $MM   = $Matches.MM
   $DD   = $Matches.DD
 
-  $NewName = "$YYYY-$MM-$DD Nordstrom.pdf"
+  $NewName = "$YYYY-$MM-$DD VENDOR.pdf"
 
   Write-Host $_.Name, "->", $NewName
 
@@ -21,7 +21,7 @@ Get-ChildItem | Where-Object { $_.Name -match $regexp } | ForEach {
   $YYYY = $Matches.YYYY
   
 
-  $NewName = "$YYYY-12-31 Nordstrom Annual Summary.pdf"
+  $NewName = "$YYYY-12-31 VENDOR Annual Summary.pdf"
 
   Write-Host $_.Name, "->", $NewName
 
